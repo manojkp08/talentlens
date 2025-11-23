@@ -63,7 +63,7 @@ with st.sidebar:
     with st.expander("🔧 Advanced Settings"):
         api_url = st.text_input(
             "API Endpoint",
-            value="https://shl-assessment-recommendor.onrender.com/recommend",
+            value="https://talentlens.onrender.com/recommend",
         )
     
     st.markdown("---")

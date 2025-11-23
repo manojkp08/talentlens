@@ -258,10 +258,13 @@ def scrape_shl_catalog():
             print(f"❌ Tab {tab_num} failed: {str(e)}")
             continue
     
+
+        
+    print(f"\n🚀 TOTAL SCRAPED: {len(assessments)} assessments across {len(CATALOG_URLS)} tabs")
+
     with open("data/shl_assessments_complete.json", "w") as f:
         json.dump(assessments, f, indent=2)
         
-    print(f"\n🚀 TOTAL SCRAPED: {len(assessments)} assessments across {len(CATALOG_URLS)} tabs")
     return assessments
 
 if __name__ == "__main__":
