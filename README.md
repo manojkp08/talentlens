@@ -8,11 +8,14 @@
 
 ## 🚀 Important Links
 
+### 🎥 Demo Video
+
+<a href="https://vimeo.com/1140349958">
+  <img src="./ThumbnailVimeo.png" alt="TalentLense Demo" width="600"/>
+</a>
+
 ### 🔹 **Live Demo (Streamlit App)**  
 👉 https://talentlens-cimdbqsshfd37ja45o6mke.streamlit.app/
-
-### 🔹 **Demo Video**  
-[![Watch the video](https://img.youtube.com/vi/ocIS6QnSWcY/maxresdefault.jpg)](https://www.youtube.com/watch?v=ocIS6QnSWcY)
 
 ## Overview
 TalentLens is an AI-powered recommendation engine designed to streamline the process of selecting SHL assessments for specific job roles. By leveraging natural language processing and semantic search, it helps HR professionals quickly identify the most relevant tests from SHL's extensive catalog, reducing manual effort and improving hiring efficiency.
@@ -147,6 +150,7 @@ Explore the full user interface via our hosted Streamlit app:
 
 ## Business Impact
 This tool has the potential to cut HR assessment selection time by up to 80%, enabling faster and more accurate hiring decisions. Its cloud-based architecture supports scalability, positioning it as a valuable asset for optimizing talent acquisition workflows.
+
 
 
 
