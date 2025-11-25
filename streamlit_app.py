@@ -181,7 +181,7 @@ with st.sidebar:
     with st.expander("🔧 Advanced Settings"):
         api_url = st.text_input(
             "API Endpoint",
-            value="http://localhost:8000/recommend",
+            value="https://talentlens-gdmn.onrender.com/recommend",
         )
     
     st.markdown("---")
