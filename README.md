@@ -77,26 +77,26 @@ graph TB
     Row5A --> End[Display Results]
     Row5B --> End
     
-    %% STYLING %%
-    style Start fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style Config fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style PrepPhase fill:#f3e5f5,stroke:#8e24aa,stroke-width:3px
-    style QueryPhase fill:#fce4ec,stroke:#c2185b,stroke-width:3px
-    style InsightPhase fill:#fff3e0,stroke:#f57c00,stroke-width:3px
-    style Row1A fill:#e8f5e9,stroke:#43a047,stroke-width:2px
-    style Row1B fill:#e8f5e9,stroke:#43a047,stroke-width:2px
-    style Row1C fill:#e8f5e9,stroke:#43a047,stroke-width:2px
-    style Row2A fill:#f1f8e9,stroke:#7cb342,stroke-width:2px
-    style Row2B fill:#f1f8e9,stroke:#7cb342,stroke-width:2px
-    style Row2C fill:#f1f8e9,stroke:#7cb342,stroke-width:2px
-    style Row3A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
-    style Row3B fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
-    style Row3C fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
-    style Row4A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style Row4B fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style Row5A fill:#fff8e1,stroke:#fdd835,stroke-width:2px
-    style Row5B fill:#fff8e1,stroke:#fdd835,stroke-width:2px
-    style End fill:#ffebee,stroke:#e53935,stroke-width:2px
+    %% STYLING WITH DARK TEXT %%
+    style Start fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b
+    style Config fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b
+    style PrepPhase fill:#f3e5f5,stroke:#8e24aa,stroke-width:3px,color:#4a148c
+    style QueryPhase fill:#fce4ec,stroke:#c2185b,stroke-width:3px,color:#880e4f
+    style InsightPhase fill:#fff3e0,stroke:#f57c00,stroke-width:3px,color:#e65100
+    style Row1A fill:#e8f5e9,stroke:#43a047,stroke-width:2px,color:#1b5e20
+    style Row1B fill:#e8f5e9,stroke:#43a047,stroke-width:2px,color:#1b5e20
+    style Row1C fill:#e8f5e9,stroke:#43a047,stroke-width:2px,color:#1b5e20
+    style Row2A fill:#f1f8e9,stroke:#7cb342,stroke-width:2px,color:#33691e
+    style Row2B fill:#f1f8e9,stroke:#7cb342,stroke-width:2px,color:#33691e
+    style Row2C fill:#f1f8e9,stroke:#7cb342,stroke-width:2px,color:#33691e
+    style Row3A fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#0d47a1
+    style Row3B fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#0d47a1
+    style Row3C fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#0d47a1
+    style Row4A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b
+    style Row4B fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#01579b
+    style Row5A fill:#fff8e1,stroke:#fdd835,stroke-width:2px,color:#f57f17
+    style Row5B fill:#fff8e1,stroke:#fdd835,stroke-width:2px,color:#f57f17
+    style End fill:#ffebee,stroke:#e53935,stroke-width:2px,color:#b71c1c
 ```
 
 ## Core Features
@@ -150,6 +150,7 @@ Explore the full user interface via our hosted Streamlit app:
 
 ## Business Impact
 This tool has the potential to cut HR assessment selection time by up to 80%, enabling faster and more accurate hiring decisions. Its cloud-based architecture supports scalability, positioning it as a valuable asset for optimizing talent acquisition workflows.
+
 
 
 
