@@ -7,7 +7,6 @@
 **Note:** For the best experience with the Streamlit demo, we recommend viewing it in a browser with dark mode enabled.
 
 ## Overview
-
 TalentLens is an AI-powered recommendation engine designed to streamline the process of selecting SHL assessments for specific job roles. By leveraging natural language processing and semantic search, it helps HR professionals quickly identify the most relevant tests from SHL's extensive catalog, reducing manual effort and improving hiring efficiency.
 
 ### The Challenge
@@ -19,7 +18,7 @@ TalentLens addresses this by automating the discovery process: it scrapes SHL's 
 ## Technology Stack
 - **Backend:** FastAPI with Uvicorn for robust API handling
 - **AI and Machine Learning:** ChromaDB for vector storage and retrieval, Sentence-Transformers for embedding generation
-- **Natural Language Processing:** Cohere API for generating concise insights
+- **Natural Language Processing:** Gemini API for generating concise insights
 - **Data Scraping:** BeautifulSoup and Requests for reliable web extraction
 - **Frontend:** Streamlit for an intuitive user interface
 - **Deployment:** Render for API hosting and Streamlit Cloud for the demo application
@@ -30,7 +29,7 @@ The system follows a structured pipeline to ensure reliable and scalable perform
 1. **Data Collection:** We scrape SHL's website to gather assessment details and store them in a structured JSON format (handled in `scraper.py`).
 2. **Vector Database Setup:** Descriptions are transformed into embeddings and persisted in ChromaDB for efficient querying (via `rag.py`).
 3. **API Processing:** User-submitted job descriptions are analyzed to retrieve and rank relevant assessments (in `api.py`).
-4. **Insight Generation:** The Cohere API evaluates the top matches to produce summaries on key skills, job level suitability, and practical usage advice.
+4. **Insight Generation:** The Gemini API evaluates the top matches to produce summaries on key skills, job level suitability, and practical usage advice.
 5. **User Interface:** The frontend accepts job descriptions as input and presents ranked recommendations with embedded insights and tips.
 
 ## Workflow
@@ -62,7 +61,7 @@ graph TB
     
     %% INSIGHTS %%
     Row4B --> InsightPhase[AI INSIGHTS PHASE]
-    InsightPhase --> Row5A[Send to Cohere API]
+    InsightPhase --> Row5A[Send to Gemini API]
     InsightPhase --> Row5B[Generate AI Insights]
     Row5A --> End[Display Results]
     Row5B --> End
@@ -128,11 +127,17 @@ Explore the full user interface via our hosted Streamlit app:
 [https://shl-assessment-recommendor-v75xtfd7tsh3rxqucbedlk.streamlit.app/](https://shl-assessment-recommendor-v75xtfd7tsh3rxqucbedlk.streamlit.app/)
 
 ## Screenshots
-![Screenshot from 2025-04-23 19-25-02](https://github.com/user-attachments/assets/1d0fba8d-a9c9-452a-866c-074d5f5f54f9)  
-![Screenshot from 2025-04-23 19-26-32](https://github.com/user-attachments/assets/d5096379-bf9e-4c70-a8c5-73bb12d71a45)  
-![Screenshot from 2025-04-23 19-26-35](https://github.com/user-attachments/assets/b46750a5-1e9e-4812-834b-54eff022ea7d)  
-![Screenshot from 2025-04-23 19-26-40](https://github.com/user-attachments/assets/a34065b3-447d-4218-8ee5-f73a0bc0ef8c)  
-![Screenshot from 2025-04-23 19-26-47](https://github.com/user-attachments/assets/b899facc-9169-45e1-b431-7070dbdcba7c)
+<img width="2878" height="1460" alt="Screenshot 2025-11-23 120430" src="https://github.com/user-attachments/assets/94a10fb1-1dda-4dc5-829c-7cafc8eca3dc" />
+<img width="2876" height="1457" alt="Screenshot 2025-11-23 120440" src="https://github.com/user-attachments/assets/40871871-fc0f-40cd-9386-b487a26d1b93" />
+<img width="2879" height="1462" alt="Screenshot 2025-11-23 120505" src="https://github.com/user-attachments/assets/235d1fea-9bcf-4764-b97d-a9c00867261f" />
+<img width="2872" height="1467" alt="Screenshot 2025-11-23 120514" src="https://github.com/user-attachments/assets/1caff11f-f8da-44ea-80fd-0011ef4c0fde" />
+<img width="2875" height="1463" alt="Screenshot 2025-11-23 120533" src="https://github.com/user-attachments/assets/af5ff160-f567-465a-92a8-8be9df84cb70" />
+<img width="2879" height="1447" alt="Screenshot 2025-11-23 120553" src="https://github.com/user-attachments/assets/308f0a42-61d3-4a79-81b7-1a6dc9c76624" />
+<img width="2877" height="1460" alt="Screenshot 2025-11-23 120612" src="https://github.com/user-attachments/assets/183a73cc-1e76-48e1-8c9f-af97ae948532" />
+<img width="2857" height="1618" alt="Screenshot 2025-11-23 120749" src="https://github.com/user-attachments/assets/e793e33b-9887-409d-9516-cf20b608f40c" />
+
 
 ## Business Impact
-This tool has the potential to cut HR assessment selection time by up to 80%, enabling faster and more accurate hiring decisions. Its cloud-based architecture supports global scalability, positioning it as a valuable asset for optimizing talent acquisition workflows.
+This tool has the potential to cut HR assessment selection time by up to 80%, enabling faster and more accurate hiring decisions. Its cloud-based architecture supports scalability, positioning it as a valuable asset for optimizing talent acquisition workflows.
+
+
