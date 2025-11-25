@@ -17,6 +17,7 @@ load_dotenv(dotenv_path=env_path)
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 llm = genai.GenerativeModel('gemini-2.0-flash')
 
+
 app = FastAPI()
 
 # Add CORS middleware
