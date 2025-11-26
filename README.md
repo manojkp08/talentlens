@@ -10,7 +10,7 @@
 
 ### 🎥 Demo Video
 
-<a href="https://vimeo.com/1140349958">
+<a href="https://youtu.be/ocIS6QnSWcY">
   <img src="./ThumbnailVimeo.png" alt="TalentLense Demo" width="600"/>
 </a>
 
@@ -150,6 +150,7 @@ Explore the full user interface via our hosted Streamlit app:
 
 ## Business Impact
 This tool has the potential to cut HR assessment selection time by up to 80%, enabling faster and more accurate hiring decisions. Its cloud-based architecture supports scalability, positioning it as a valuable asset for optimizing talent acquisition workflows.
+
 
 
 
