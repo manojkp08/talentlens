@@ -1,2 +1,15 @@
 # Environment variables
 .env
+.env.local
+.env.*.local
+
+
+#pycache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
