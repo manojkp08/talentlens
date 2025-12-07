@@ -1,4 +1,5 @@
 import chromadb
+from chromadb.errors import NotFoundError  # Add this import
 from sentence_transformers import SentenceTransformer
 import json
 import os
@@ -72,7 +73,8 @@ def create_vector_db():
     try:
         chroma_client.delete_collection("shl_assessments")
         print("♻️ Replaced existing collection")
-    except ValueError:
+    except NotFoundError:  # Changed from ValueError
+        print("📝 Creating new collection")
         pass  # Collection didn't exist
 
     # Create collection with proper embedding function
